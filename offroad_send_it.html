@@ -20,7 +20,7 @@
   #speed{position:absolute;inset:0;z-index:2;opacity:0;transition:opacity .15s;pointer-events:none;
     background:repeating-linear-gradient(90deg,rgba(255,255,255,0) 0 26px,rgba(255,255,255,.22) 26px 30px);
     -webkit-mask:linear-gradient(90deg,#000,transparent 42%),linear-gradient(270deg,#000,transparent 42%)}
-  #scene.launch #speed{opacity:1;animation:zip .14s linear infinite}
+  #scene.launch #speed{opacity:.32;animation:zip .16s linear infinite}
   @keyframes zip{to{background-position:-30px 0}}
 
   #shadow{position:absolute;left:50%;bottom:38%;width:42vmin;height:5vmin;transform:translateX(-50%);
@@ -30,8 +30,8 @@
   #rig img{width:100%;display:block}
   #scene.revving #rig{animation:shake .06s linear infinite}
   @keyframes shake{0%{transform:translateX(-50%) rotate(-.7deg)}50%{transform:translateX(-50.7%) rotate(.7deg) translateY(-2px)}100%{transform:translateX(-49.3%) rotate(-.6deg)}}
-  #scene.launch #rig{transition:transform .6s cubic-bezier(.4,0,.2,1),opacity .6s ease;
-    transform:translateX(-50%) translateY(-46%) scale(1.5);opacity:0}
+  #scene.launch #rig{transition:transform .7s cubic-bezier(.45,0,.25,1),opacity .7s ease;
+    transform:translateX(-50%) translateY(-125%) scale(.42) rotate(-7deg);opacity:0}
 
   #burst{position:absolute;left:50%;bottom:34%;width:72vmin;height:42vmin;transform:translateX(-50%);z-index:3;
     background:radial-gradient(closest-side,rgba(230,210,175,.9),rgba(230,210,175,0));opacity:0;pointer-events:none}
